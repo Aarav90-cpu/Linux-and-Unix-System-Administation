@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@material/web": "^2.4.1",
+    "playwright": "^1.61.0"
+  }
+}
