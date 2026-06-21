@@ -40,6 +40,24 @@
   }
   h1 { color: #ed8936; margin-top: 2rem; }
   .content { margin-top: 2rem; padding: 2rem; background: rgba(0,0,0,0.2); border-radius: 12px; border-left: 4px solid #dd6b20; }
+  .cta-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .btn-get-started {
+    --md-filled-button-container-color: #dd6b20;
+    --md-filled-button-label-text-color: #fff;
+    --md-filled-button-container-shape: 28px;
+    box-shadow: 0 4px 20px rgba(221, 107, 32, 0.4);
+    transform: scale(1.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-get-started:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 24px rgba(221, 107, 32, 0.6);
+  }
 </style>
 
   <link rel="icon" type="image/png" href="../../PENGUIN.png">
@@ -52,7 +70,14 @@
   </md-filled-button>
   <h1 class='md-typescale-display-small'>SECTION ONE: BASIC ADMINISTRATION</h1>
   <div class='content md-typescale-body-large'>
-    <p><i>Start writing documentation for <strong>SECTION ONE: BASIC ADMINISTRATION</strong> here...</i></p>
+    <p>Welcome to the digital trenches. Basic Administration is the survival gear you need before you go poking around production servers. We're covering the absolute essentials: how to turn things on (and off again), wielding <strong>root</strong> powers without accidentally nuking your career, and figuring out what all those rogue processes are actually doing.</p>
+    <p>We'll also dive into user management (because humans are inherently the weakest link), taming the sprawling wilderness of the filesystem, and backups—literally the only thing standing between you and a very awkward conversation with your boss. Grab a coffee. It's time to learn how to keep the lights on.</p>
+  </div>
+  <div class="cta-container">
+    <md-filled-button class="btn-get-started" href="Chapter_1_Where_to_Start/index.html">
+      <md-icon slot="icon">rocket_launch</md-icon>
+      PROCEED TO CHAPTER 1
+    </md-filled-button>
   </div>
 </div>
 </body>
