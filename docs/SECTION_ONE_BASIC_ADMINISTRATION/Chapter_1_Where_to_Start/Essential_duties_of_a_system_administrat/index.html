@@ -50,9 +50,56 @@
     <md-icon slot="icon">arrow_back</md-icon>
     Back to Main Index
   </md-filled-button>
-  <h1 class='md-typescale-display-small'>Essential duties of a system administrator</h1>
+  <h1 class='md-typescale-display-small'>1.1 Essential Duties of a Sysadmin</h1>
   <div class='content md-typescale-body-large'>
-    <p><i>Start writing documentation for <strong>Essential duties of a system administrator</strong> here...</i></p>
+    <p>What exactly does a sysadmin do? The short answer: everything required to keep the glowing boxes from turning into smoking boxes.</p>
+    <p>At most companies, these tasks are split across an entire team. But at the end of the day, someone has to understand how all the pieces fit together. That someone is you.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Controlling Access</h3>
+    <p>You create accounts for new hires, delete accounts for people who left, and reset passwords for users who forgot them for the third time this month. Adding and removing users is usually automated by a directory service or config management tool, because otherwise, you'd do nothing else.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Adding Hardware</h3>
+    <p>If you work with physical hardware (instead of magically spinning up cloud instances), you get to rack servers, plug in cables, and convince the operating system that yes, the new network card actually exists. It ranges from plugging in a simple drive to configuring external storage arrays that cost more than your car.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Automating Tasks</h3>
+    <p><em>This feature exists because users collectively demonstrated that given enough freedom, humanity will immediately press the wrong button.</em></p>
+    <p>If you do something twice, automate it. Automation reduces human error and gives you your life back. Knowing how to write scripts and use automation tools isn't just a nice-to-have; it's practically the entire job description.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Overseeing Backups</h3>
+    <p>Backups are boring. They take forever.</p>
+    <p><em>But unfortunately, physics disagrees with your desire to ignore them.</em></p>
+    <p>Hard drives die, servers flood, and databases get accidentally dropped. You absolutely must run backups on a schedule, and more importantly, you must regularly <strong>test restoring them</strong>. A backup you haven't tested is just a wish.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Installing & Upgrading Software</h3>
+    <p><em>Everything was going well. Then someone added JavaScript.</em></p>
+    <p>You'll spend a lot of time installing, configuring, and updating software. When patches drop, you have to test and deploy them <em>without</em> taking down the production servers. You also help set up "continuous delivery" pipelines, which is a fancy way of saying "automatically pushing code to users on a schedule without everything exploding."</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Monitoring</h3>
+    <p>Users will almost never report a problem internally. They will just work around it. External users, however, will skip the support ticket entirely and go complain about you on Twitter.</p>
+    <p>You avoid this by monitoring everything—making sure web services respond, analyzing logs, and watching disk space. Catch the problem and fix it <em>before</em> it becomes a public relations disaster.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Troubleshooting</h3>
+    <p><em>At this point, the database is fighting for its life.</em></p>
+    <p>Systems will fail, often spectacularly and at the worst possible times. Your job is to play digital mechanic, figure out what broke, and bring in the experts when necessary. Spoiler: finding the actual cause of the problem usually takes 10x longer than fixing it.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Maintaining Documentation</h3>
+    <p>You will make a lot of weird configuration choices. If you don't document them, your coworkers will have to reverse-engineer your chaotic genius at 3:00 AM when the system goes down. A well-crafted network diagram is worth a thousand lines of text.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Vigilant Security</h3>
+    <p>You are the first line of defense between the company's data and the dark corners of the internet. This means implementing security policies, checking for unauthorized access, and maybe setting up a few elaborate digital traps. Sysadmins are naturally paranoid, and for good reason.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Tuning Performance</h3>
+    <p>When a server starts acting sluggish, it's your job to crack it open and figure out why. Linux and UNIX are incredibly flexible, which means you can tweak and tune them endlessly to squeeze out optimal performance for your specific needs.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Developing Site Policies</h3>
+    <p>For legal reasons, companies need rules about data retention, privacy, and what users are absolutely not allowed to do on company laptops. You help draft these policies so they actually make sense technically while keeping the lawyers happy.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Working with Vendors</h3>
+    <p>You rarely build everything from scratch. You will rely on cloud providers, SaaS shops, and external consultants. This means you occasionally have to put on your business hat to select vendors, help negotiate contracts, and then actually make their stuff work once the paperwork is signed.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Fire Fighting</h3>
+    <p>Users will constantly bombard you with questions ranging from <em>"It worked yesterday, what did you break?!"</em> to <em>"I spilled coffee on my keyboard, should I wash it in the sink?"</em></p>
+    <p>Here’s the secret: your ability to politely handle these ridiculous issues affects your reputation far more than your actual technical skills. A single well-handled, friendly response to a trouble ticket scores you way more points than five hours of invisible, midnight debugging. You can scream into the void about the injustice of it all, or you can play the game. Your choice!</p>
   </div>
 </div>
 </body>
