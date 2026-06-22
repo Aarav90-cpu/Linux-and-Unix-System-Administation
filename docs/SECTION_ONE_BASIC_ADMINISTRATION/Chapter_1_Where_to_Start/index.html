@@ -1,76 +1,141 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Chapter 1 Where to Start</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
-<script type="importmap">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Chapter 1 Where to Start</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <script type="importmap">
   {
     "imports": {
       "@material/web/": "https://esm.run/@material/web/"
     }
   }
 </script>
-<script type="module">
-  import '@material/web/all.js';
-  import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
-  document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
-</script>
-<style>
-  body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #431407 0%, #1a0500 100%);
-    color: #fbd38d;
-    margin: 0;
-    padding: 2rem 5%;
-    --md-sys-color-primary: #f6ad55;
-    --md-sys-color-on-background: #fbd38d;
-  }
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.03);
-    padding: 3rem;
-    border-radius: 24px;
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.4);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 152, 0, 0.15);
-  }
-  h1 { color: #ed8936; margin-top: 2rem; }
-  .content { margin-top: 2rem; padding: 2rem; background: rgba(0,0,0,0.2); border-radius: 12px; border-left: 4px solid #dd6b20; }
-</style>
+  <script type="module">
+    import '@material/web/all.js';
+    import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #431407 0%, #1a0500 100%);
+      color: #fbd38d;
+      margin: 0;
+      padding: 2rem 5%;
+      --md-sys-color-primary: #f6ad55;
+      --md-sys-color-on-background: #fbd38d;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 3rem;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 152, 0, 0.15);
+    }
+
+    h1 {
+      color: #ed8936;
+      margin-top: 2rem;
+    }
+
+    .content {
+      margin-top: 2rem;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      border-left: 4px solid #dd6b20;
+    }
+  </style>
 
   <link rel="icon" type="image/png" href="../../../PENGUIN.png">
 </head>
+
 <body>
-<div class='container'>
-  <md-filled-button href="../../../index.html">
-    <md-icon slot="icon">arrow_back</md-icon>
-    Back to Main Index
-  </md-filled-button>
-  <h1 class='md-typescale-display-small'>Chapter 1 Where to Start</h1>
-  <div class='content md-typescale-body-large'>
-    <p>Welcome to the jungle. We built this guide to fill a very specific void in the vast, terrifying ocean of man pages, outdated blogs, and forum posts from 2008 where the accepted answer is "nvm I fixed it."</p>
+  <div class='container'>
+    <md-filled-button href="../../../index.html">
+      <md-icon slot="icon">arrow_back</md-icon>
+      Back to Main Index
+    </md-filled-button>i
+    <h1 class='md-typescale-display-small'>Chapter 1 Where to Start</h1>
+    <div class='content md-typescale-body-large'>
+      <p>We’ve designed this book to occupy a specific niche in the vast ecosystem of man pages, blogs, magazines,
+        books, and other reference materials that address the needs of UNIX and Linux system administrators.</p>
+      <p>First, it’s an orientation guide. It reviews the major administrative systems, identifies the different pieces
+        of each, and explains how they work together. In the many cases where you must choose among various
+        implementations of a concept, we describe the advantages and drawbacks of the most popular options.</p>
+      <p>Second, it’s a quick-reference handbook that summarizes what you need to know to perform common tasks on a
+        variety of common UNIX and Linux systems. For example, the <code>ps</code> command, which shows the status of
+        running processes, supports more than 80 command-line options on Linux systems. But a few combinations of
+        options satisfy the majority of a system administrator’s needs; we summarize them.</p>
+      <p>Finally, this book focuses on the administration of enterprise servers and networks. That is, <strong>serious,
+          professional system administration.</strong> It’s easy to set up a single system; harder to keep a
+        distributed, cloud-based platform running smoothly in the face of viral popularity, network partitions, and
+        targeted attacks. We describe techniques and rules of thumb that help you recover systems from adversity, and we
+        help you choose solutions that scale as your empire grows in size, complexity, and heterogeneity.</p>
+      <p>Are we perfectly objective? Absolutely not. System administration is an art where perfectly reasonable people will fight to the death over the "right" way to do things. We're giving you our highly opinionated, battle-tested takes as raw data. Take what works for your environment, and ignore the rest.</p>
+    </div>
 
-    <p><strong>First, it’s an orientation guide.</strong></p>
-    <p>We break down the major administrative systems, explain what all the moving parts do, and show you how they actually talk to each other without catching fire. When there are five different ways to do the same thing, we'll give you the brutally honest pros and cons of the most popular options. Because sometimes, the "best practice" is just a trap.</p>
+    <h2 class='md-typescale-display-small' style='color:#ed8936; margin-top: 3rem;'>1.1 Essential Duties of a Sysadmin</h2>
+    <div class='content md-typescale-body-large'>
+      <p>What exactly does a sysadmin do? The short answer: everything required to keep the glowing boxes from turning into smoking boxes.</p>
+      <p>At most companies, these tasks are split across an entire team. But at the end of the day, someone has to understand how all the pieces fit together. That someone is you.</p>
 
-    <p><strong>Second, it’s a quick-reference handbook.</strong></p>
-    <p>For example, take the <code>ps</code> command (which shows running processes). On Linux, it has over 80 command-line options.</p>
-    <p>Nobody has time for that.</p>
-    <p>We cut through the noise and give you the handful of combinations that actually matter to keep your system from flatlining.</p>
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Controlling Access</h3>
+      <p>You create accounts for new hires, delete accounts for people who left, and reset passwords for users who forgot them for the third time this month. Adding and removing users is usually automated by a directory service or config management tool, because otherwise, you'd do nothing else.</p>
 
-    <p><strong>Finally, we focus on <em>enterprise</em> servers and networks.</strong></p>
-    <p>That means serious, professional, "please don't let us go down on Black Friday" system administration. Setting up a single server in your basement is easy. Keeping a massive, distributed, cloud-based platform alive during a viral traffic spike, a network partition, or a targeted attack?</p>
-    <p>This is where things get weird.</p>
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Adding Hardware</h3>
+      <p>If you work with physical hardware (instead of magically spinning up cloud instances), you get to rack servers, plug in cables, and convince the operating system that yes, the new network card actually exists. It ranges from plugging in a simple drive to configuring external storage arrays that cost more than your car.</p>
 
-    <p>We give you the rules of thumb to recover from absolute disaster, and the architectural choices you'll need as your digital empire grows.</p>
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Automating Tasks</h3>
+      <p><em>This feature exists because users collectively demonstrated that given enough freedom, humanity will immediately press the wrong button.</em></p>
+      <p>If you do something twice, automate it. Automation reduces human error and gives you your life back. Knowing how to write scripts and use automation tools isn't just a nice-to-have; it's practically the entire job description.</p>
 
-    <p><strong>A quick disclaimer:</strong></p>
-    <p>Are we perfectly objective? Absolutely not. System administration is an art where perfectly reasonable people will fight to the death over the "right" way to do things. We're giving you our highly opinionated, battle-tested takes as raw data. Take what works for your environment, and ignore the rest.</p>
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Overseeing Backups</h3>
+      <p>Backups are boring. They take forever.</p>
+      <p><em>But unfortunately, physics disagrees with your desire to ignore them.</em></p>
+      <p>Hard drives die, servers flood, and databases get accidentally dropped. You absolutely must run backups on a schedule, and more importantly, you must regularly <strong>test restoring them</strong>. A backup you haven't tested is just a wish.</p>
+
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Installing & Upgrading Software</h3>
+      <p><em>Everything was going well. Then someone added JavaScript.</em></p>
+      <p>You'll spend a lot of time installing, configuring, and updating software. When patches drop, you have to test and deploy them <em>without</em> taking down the production servers. You also help set up "continuous delivery" pipelines, which is a fancy way of saying "automatically pushing code to users on a schedule without everything exploding."</p>
+
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Monitoring</h3>
+      <p>Users will almost never report a problem internally. They will just work around it. External users, however, will skip the support ticket entirely and go complain about you on Twitter.</p>
+      <p>You avoid this by monitoring everything—making sure web services respond, analyzing logs, and watching disk space. Catch the problem and fix it <em>before</em> it becomes a public relations disaster.</p>
+
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Troubleshooting</h3>
+      <p><em>At this point, the database is fighting for its life.</em></p>
+      <p>Systems will fail, often spectacularly and at the worst possible times. Your job is to play digital mechanic, figure out what broke, and bring in the experts when necessary. Spoiler: finding the actual cause of the problem usually takes 10x longer than fixing it.</p>
+
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Maintaining Documentation</h3>
+      <p>You will make a lot of weird configuration choices. If you don't document them, your coworkers will have to reverse-engineer your chaotic genius at 3:00 AM when the system goes down. A well-crafted network diagram is worth a thousand lines of text.</p>
+
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Vigilant Security</h3>
+      <p>You are the first line of defense between the company's data and the dark corners of the internet. This means implementing security policies, checking for unauthorized access, and maybe setting up a few elaborate digital traps. Sysadmins are naturally paranoid, and for good reason.</p>
+
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Tuning Performance</h3>
+      <p>When a server starts acting sluggish, it's your job to crack it open and figure out why. Linux and UNIX are incredibly flexible, which means you can tweak and tune them endlessly to squeeze out optimal performance for your specific needs.</p>
+
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Developing Site Policies</h3>
+      <p>For legal reasons, companies need rules about data retention, privacy, and what users are absolutely not allowed to do on company laptops. You help draft these policies so they actually make sense technically while keeping the lawyers happy.</p>
+
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Working with Vendors</h3>
+      <p>You rarely build everything from scratch. You will rely on cloud providers, SaaS shops, and external consultants. This means you occasionally have to put on your business hat to select vendors, help negotiate contracts, and then actually make their stuff work once the paperwork is signed.</p>
+
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Fire Fighting</h3>
+      <p>Users will constantly bombard you with questions ranging from <em>"It worked yesterday, what did you break?!"</em> to <em>"I spilled coffee on my keyboard, should I wash it in the sink?"</em></p>
+      <p>Here’s the secret: your ability to politely handle these ridiculous issues affects your reputation far more than your actual technical skills. A single well-handled, friendly response to a trouble ticket scores you way more points than five hours of invisible, midnight debugging. You can scream into the void about the injustice of it all, or you can play the game. Your choice!</p>
+    </div>
   </div>
-</div>
 </body>
+
 </html>
