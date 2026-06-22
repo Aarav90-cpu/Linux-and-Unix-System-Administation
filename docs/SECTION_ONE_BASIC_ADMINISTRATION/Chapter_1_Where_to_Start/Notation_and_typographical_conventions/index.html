@@ -50,9 +50,60 @@
     <md-icon slot="icon">arrow_back</md-icon>
     Back to Main Index
   </md-filled-button>
-  <h1 class='md-typescale-display-small'>Notation and typographical conventions</h1>
+  <h1 class='md-typescale-display-small'>1.5 Notation and Typographical Conventions</h1>
   <div class='content md-typescale-body-large'>
-    <p><i>Start writing documentation for <strong>Notation and typographical conventions</strong> here...</i></p>
+    <p>To keep things from devolving into total chaos, we use a few strict rules when showing you commands and code.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Fonts and Formatting</h3>
+    <ul style="color:#fbd38d;">
+      <li style="margin-bottom: 0.5rem;"><strong>Bold text:</strong> Filenames, commands, and literal arguments you need to type exactly as shown.</li>
+      <li style="margin-bottom: 0.5rem;"><em>Italics:</em> Placeholders. Don't actually type <code>cp <em>file</em> <em>directory</em></code>. Replace them with the real things!</li>
+      <li style="margin-bottom: 0.5rem;"><code>Code font:</code> Used for excerpts from config files and terminal sessions.</li>
+    </ul>
+    
+    <p>Sometimes, we drop little hints inside terminal blocks using the bash comment character (<code>#</code>) followed by italics:</p>
+    <pre style="background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 8px; color: #a0aec0; overflow-x: auto;">
+$ grep Bob /pub/phonelist <span style="color:#718096; font-style:italic;"># Look up Bob's phone number</span>
+Bob Knowles 555-2834
+Bob Smith 555-2311</pre>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Terminal Prompts</h3>
+    <p>The prompt tells you who you need to be to run the command:</p>
+    <ul style="color:#fbd38d;">
+      <li style="margin-bottom: 0.5rem;"><code>$</code> means run it as a normal, unprivileged user.</li>
+      <li style="margin-bottom: 0.5rem;"><code>#</code> means you need to be <strong>root</strong> (the superuser).</li>
+    </ul>
+    <p>If a command only works on a specific distro, we'll prefix the prompt with the distro name so you don't break your server trying to use Debian tools on Red Hat:</p>
+    <pre style="background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 8px; color: #a0aec0; overflow-x: auto;">
+$ sudo su - root <span style="color:#718096; font-style:italic;"># Become root</span>
+# passwd <span style="color:#718096; font-style:italic;"># Change root's password</span>
+debian# dpkg -l <span style="color:#718096; font-style:italic;"># List installed packages on Debian and Ubuntu</span></pre>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Syntax Cheatsheet</h3>
+    <p>We use standard man page conventions when showing how a command is structured:</p>
+    <ul style="color:#fbd38d;">
+      <li style="margin-bottom: 0.5rem;"><code>[ ]</code> (Square brackets): The stuff inside is optional.</li>
+      <li style="margin-bottom: 0.5rem;"><code>...</code> (Ellipsis): You can repeat the previous item.</li>
+      <li style="margin-bottom: 0.5rem;"><code>{ | }</code> (Curly braces with vertical bars): Pick exactly one of the items separated by the bars.</li>
+    </ul>
+    <p>So, <code>bork [ -x ] { on | off } <em>filename</em> ...</code> means you <em>could</em> run <code>bork -x off /etc/passwd /etc/smartd.conf</code>.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Globbing (Wildcards)</h3>
+    <p>Shell pattern matching makes life easier:</p>
+    <ul style="color:#fbd38d;">
+      <li style="margin-bottom: 0.5rem;"><code>*</code> (Star): Matches zero or more characters.</li>
+      <li style="margin-bottom: 0.5rem;"><code>?</code> (Question mark): Matches exactly one character.</li>
+      <li style="margin-bottom: 0.5rem;"><code>~</code> (Tilde): Your home directory. (And <code>~user</code> is that specific user's home directory).</li>
+    </ul>
+    
+    <p><em>P.S. When we quote things, we put punctuation outside the quotes if it belongs outside. We're sysadmins, not grammar teachers, and precision is more important than U.S. English rules.</em></p>
+
+    <div class="cta-container" style="display: flex; justify-content: center; margin-top: 2.5rem; margin-bottom: 1rem;">
+      <md-filled-button class="btn-get-started" href="../Units/index.html" style="--md-filled-button-container-color: #dd6b20; --md-filled-button-label-text-color: #fff; --md-filled-button-container-shape: 28px; box-shadow: 0 4px 20px rgba(221, 107, 32, 0.4); transform: scale(1.1);">
+        <md-icon slot="icon">arrow_forward</md-icon>
+        NEXT: UNITS
+      </md-filled-button>
+    </div>
   </div>
 </div>
 </body>
