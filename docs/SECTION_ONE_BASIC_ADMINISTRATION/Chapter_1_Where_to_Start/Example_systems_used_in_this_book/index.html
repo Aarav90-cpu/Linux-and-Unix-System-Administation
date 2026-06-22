@@ -59,10 +59,33 @@
     <p>Most of the information in this book applies universally. However, when we need to show you a command, file path, or configuration that is completely specific to one of these systems, we won't be using confusing margin logos.</p>
     <p>Instead, <strong>we’ll just put a clearly labeled bar directly on top of the code block telling you exactly which distribution it applies to.</strong> Simple, right?</p>
     
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Debian</h3>
+    <p>Pronounced <em>deb-ian</em> (named after the late founder Ian Murdock and his wife Debra). It’s one of the oldest, most respected distros on the planet. Run entirely by volunteers, it has a hardcore ideological commitment to open-source freedom. Debian manages three simultaneous releases:</p>
+    <ul style="color:#fbd38d;">
+      <li style="margin-bottom: 0.5rem;"><strong>Stable:</strong> Bulletproof. For production servers.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Unstable:</strong> Bleeding-edge packages where things will inevitably break.</li>
+      <li style="margin-bottom: 0.5rem;"><strong>Testing:</strong> The awkward middle child.</li>
+    </ul>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Ubuntu</h3>
+    <p>Built on top of Debian but financially backed by a company called Canonical. Ubuntu releases new versions twice a year (April and October) named with ridiculous alliterative animal codes (like <em>Zesty Zapus</em>). Every two years, the April release is declared a <strong>Long-Term Support (LTS)</strong> edition, which guarantees five years of updates. If you're running Ubuntu in production, you should definitely be using an LTS release.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Red Hat Enterprise Linux (RHEL) & Fedora</h3>
+    <p>Red Hat is the undisputed heavyweight champion of corporate Linux. <strong>RHEL</strong> targets massive enterprises that want 24/7 consulting and support to guarantee their systems don't die. Yes, the code is open source, but you have to pay for the license to run it in production.</p>
+    <p>Where does RHEL get its software? From <strong>Fedora</strong>, its community-driven testbed. If software survives the wild west of Fedora, it eventually graduates to RHEL.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">CentOS (and other RHEL clones)</h3>
+    <p><strong>CentOS</strong> is basically RHEL, but with the Red Hat logos scrubbed off and the price tag set to exactly $0. It’s binary-compatible, meaning if it runs on Red Hat, it runs on CentOS. Many companies use a hybrid strategy: they pay Red Hat for mission-critical database servers, and run free CentOS on their fleet of disposable web servers.</p>
+    <p><em>Note: Whenever we mention Red Hat or CentOS in this book, the rule applies to both. We won't keep repeating both names because that gets annoying fast. The same rules usually apply to other RHEL clones like Oracle Linux or Amazon Linux.</em></p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">FreeBSD</h3>
+    <p>FreeBSD still commands a massive cult following among elite system architects, security purists, and huge tech companies. If you’re streaming a movie on Netflix or messaging on WhatsApp, you're interacting with FreeBSD servers doing insanely heavy lifting.</p>
+    <p>Unlike Linux (which is technically just a kernel that needs thousands of third-party packages to do anything useful), FreeBSD is a <strong>complete operating system</strong>. The kernel and the core userland tools are developed together and released under the permissive BSD license. We’ll be using FreeBSD 11.0 as our primary example anytime we need to highlight how the BSD/UNIX side of the world does things.</p>
+
     <div class="cta-container" style="display: flex; justify-content: center; margin-top: 2.5rem; margin-bottom: 1rem;">
-      <md-filled-button class="btn-get-started" href="../Example_Linux_distributions/index.html" style="--md-filled-button-container-color: #dd6b20; --md-filled-button-label-text-color: #fff; --md-filled-button-container-shape: 28px; box-shadow: 0 4px 20px rgba(221, 107, 32, 0.4); transform: scale(1.1);">
+      <md-filled-button class="btn-get-started" href="../Notation_and_typographical_conventions/index.html" style="--md-filled-button-container-color: #dd6b20; --md-filled-button-label-text-color: #fff; --md-filled-button-container-shape: 28px; box-shadow: 0 4px 20px rgba(221, 107, 32, 0.4); transform: scale(1.1);">
         <md-icon slot="icon">arrow_forward</md-icon>
-        NEXT: EXAMPLE LINUX DISTRIBUTIONS
+        NEXT: NOTATION AND CONVENTIONS
       </md-filled-button>
     </div>
   </div>
