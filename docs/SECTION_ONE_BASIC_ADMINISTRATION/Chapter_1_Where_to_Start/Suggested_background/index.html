@@ -1,79 +1,115 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Suggested background</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
-<script type="importmap">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Suggested background</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <script type="importmap">
   {
     "imports": {
       "@material/web/": "https://esm.run/@material/web/"
     }
   }
 </script>
-<script type="module">
-  import '@material/web/all.js';
-  import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
-  document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
-</script>
-<style>
-  body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #431407 0%, #1a0500 100%);
-    color: #fbd38d;
-    margin: 0;
-    padding: 2rem 5%;
-    --md-sys-color-primary: #f6ad55;
-    --md-sys-color-on-background: #fbd38d;
-  }
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.03);
-    padding: 3rem;
-    border-radius: 24px;
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.4);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 152, 0, 0.15);
-  }
-  h1 { color: #ed8936; margin-top: 2rem; }
-  .content { margin-top: 2rem; padding: 2rem; background: rgba(0,0,0,0.2); border-radius: 12px; border-left: 4px solid #dd6b20; }
-</style>
+  <script type="module">
+    import '@material/web/all.js';
+    import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #431407 0%, #1a0500 100%);
+      color: #fbd38d;
+      margin: 0;
+      padding: 2rem 5%;
+      --md-sys-color-primary: #f6ad55;
+      --md-sys-color-on-background: #fbd38d;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 3rem;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 152, 0, 0.15);
+    }
+
+    h1 {
+      color: #ed8936;
+      margin-top: 2rem;
+    }
+
+    .content {
+      margin-top: 2rem;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      border-left: 4px solid #dd6b20;
+    }
+  </style>
 
   <link rel="icon" type="image/png" href="../../../../PENGUIN.png">
 </head>
+
 <body>
-<div class='container'>
-  <md-filled-button href="../../../../index.html">
-    <md-icon slot="icon">arrow_back</md-icon>
-    Back to Main Index
-  </md-filled-button>
-  <h1 class='md-typescale-display-small'>1.2 Suggested Background</h1>
-  <div class='content md-typescale-body-large'>
-    <p>We’re going to assume you already know your way around a UNIX/Linux system. If terms like <code>cd</code>, <code>ls</code>, and "file permissions" sound like foreign concepts, you might want to grab a beginner's guide first (see our recommended reading on page 28). We won’t be covering the absolute basics here.</p>
+  <div class='container'>
+    <md-filled-button href="../../../../index.html">
+      <md-icon slot="icon">arrow_back</md-icon>
+      Back to Main Index
+    </md-filled-button>
+    <h1 class='md-typescale-display-small'>1.2 Suggested Background</h1>
+    <div class='content md-typescale-body-large'>
+      <p>We’re going to assume you already know your way around a UNIX/Linux system. If terms like <code>cd</code>,
+        <code>ls</code>, and "file permissions" sound like foreign concepts, you might want to grab a beginner's guide
+        first. We won’t be covering the absolute basics here.</p>
 
-    <h3 style="color:#feebc8; margin-top:1.5rem;">The Command Line</h3>
-    <p>We love a beautifully designed GUI as much as anyone. But the reality is that Linux GUI tools for administration are still pretty basic compared to what the underlying software can actually do. If you want to get real work done, you have to be comfortable living in the terminal.</p>
+      <h3 style="color:#feebc8; margin-top:1.5rem;">The Command Line</h3>
+      <p>We love a beautifully designed GUI as much as anyone. But the reality is that Linux GUI tools for
+        administration are still pretty basic compared to what the underlying software can actually do. If you want to
+        get real work done, you have to be comfortable living in the terminal.</p>
 
-    <h3 style="color:#feebc8; margin-top:1.5rem;">Text Editing</h3>
-    <p>You need to learn <code>vi</code> (or its enhanced version, <code>vim</code>). It's installed on every UNIX system by default, meaning you'll never be stranded without it. It’s fast, powerful, and arguably the single best productivity upgrade you can give yourself. Type <code>vimtutor</code> into your terminal for an excellent interactive intro.</p>
-    <p>If you're completely stuck, GNU’s <code>nano</code> is a simple "starter editor" with on-screen prompts. Just use it discreetly—some of the more old-school admins might visibly cringe if they catch you using it.</p>
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Text Editing</h3>
+      <p>You need to learn <code>vi</code> (or its enhanced version, <code>vim</code>). It's installed on every UNIX
+        system by default, meaning you'll never be stranded without it. It’s fast, powerful, and arguably the single
+        best productivity upgrade you can give yourself. Type <code>vimtutor</code> into your terminal for an excellent
+        interactive intro.</p>
+      <p>If you're completely stuck, GNU’s <code>nano</code> is a simple "starter editor" with on-screen prompts. Just
+        use it discreetly—some of the more old-school admins might visibly cringe if they catch you using it.</p>
 
-    <h3 style="color:#feebc8; margin-top:1.5rem;">Scripting and Coding</h3>
-    <p>Sysadmins aren’t traditionally software developers, but the industry is changing fast. The best admins today are polyglot programmers who don’t mind picking up a new language when it solves a problem.</p>
-    <p>For your scripting toolkit, we strongly recommend learning:</p>
-    <ul style="color:#fbd38d;">
-      <li style="margin-bottom: 0.5rem;"><strong>Bash:</strong> The default shell almost everywhere. It’s a pretty primitive programming language, but it’s the ultimate duct tape for holding administrative tools together.</li>
-      <li style="margin-bottom: 0.5rem;"><strong>Python:</strong> A highly readable language with a massive community and a library for almost any task you can imagine.</li>
-      <li style="margin-bottom: 0.5rem;"><strong>Ruby:</strong> Developers often describe Ruby as "beautiful" and "a joy to work with."</li>
-    </ul>
-    <p>Honestly, Python and Ruby will solve the exact same problems for you in administration. Pick whichever one you prefer.</p>
+      <h3 style="color:#feebc8; margin-top:1.5rem;">Scripting and Coding</h3>
+      <p>Sysadmins aren’t traditionally software developers, but the industry is changing fast. The best admins today
+        are polyglot programmers who don’t mind picking up a new language when it solves a problem.</p>
+      <p>For your scripting toolkit, we strongly recommend learning:</p>
+      <ul style="color:#fbd38d;">
+        <li style="margin-bottom: 0.5rem;"><strong>Bash:</strong> The default shell almost everywhere. It’s a pretty
+          primitive programming language, but it’s the ultimate duct tape for holding administrative tools together.
+        </li>
+        <li style="margin-bottom: 0.5rem;"><strong>Python:</strong> A highly readable language with a massive community
+          and a library for almost any task you can imagine.</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Ruby:</strong> Developers often describe Ruby as "beautiful" and "a
+          joy to work with."</li>
+      </ul>
+      <p>Honestly, Python and Ruby will solve the exact same problems for you in administration. Pick whichever one you
+        prefer.</p>
 
-    <p>You should also check out <code>expect</code>. It’s not a full programming language, but rather a tool for automating interactive programs. It’s an easy-to-learn glue technology that can save you from writing overly complex scripts.</p>
+      <p>You should also check out <code>expect</code>. It’s not a full programming language, but rather a tool for automating interactive programs. It’s an easy-to-learn glue technology that can save you from writing overly complex scripts.</p>
 
     <p><em>Note: We cover scripting for Bash, Python, and Ruby—along with regular expressions and useful sysadmin idioms—in Chapter 7.</em></p>
+
+    <div class="cta-container" style="display: flex; justify-content: center; margin-top: 2.5rem; margin-bottom: 1rem;">
+      <md-filled-button class="btn-get-started" href="../Linux_distributions/index.html" style="--md-filled-button-container-color: #dd6b20; --md-filled-button-label-text-color: #fff; --md-filled-button-container-shape: 28px; box-shadow: 0 4px 20px rgba(221, 107, 32, 0.4); transform: scale(1.1);">
+        <md-icon slot="icon">arrow_forward</md-icon>
+        NEXT: LINUX DISTRIBUTIONS
+      </md-filled-button>
+    </div>
   </div>
 </div>
 </body>

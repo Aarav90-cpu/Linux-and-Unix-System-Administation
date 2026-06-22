@@ -50,9 +50,117 @@
     <md-icon slot="icon">arrow_back</md-icon>
     Back to Main Index
   </md-filled-button>
-  <h1 class='md-typescale-display-small'>Linux distributions</h1>
+  <h1 class='md-typescale-display-small'>1.3 Linux Distributions</h1>
   <div class='content md-typescale-body-large'>
-    <p><i>Start writing documentation for <strong>Linux distributions</strong> here...</i></p>
+    <p>A Linux distribution (or "distro") is essentially the core Linux kernel bundled together with the software packages that give you all the commands and tools you actually use. While they all share the same kernel family tree, they vary wildly in how they handle packages, their target audience, and how much support they offer.</p>
+    
+    <p>There are literally hundreds of independent Linux distros out there today. Why? Honestly, it seems like developers just really enjoy making new ones, often claiming "easier installation" or "better software libraries" as their killer features. In the grand scheme of things, the differences between most of them aren't cosmically significant. Moving forward, you can expect the major players derived from the Debian and Red Hat lineages to continue dominating production environments.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">The Minimalist Shift</h3>
+    <p>General-purpose operating systems have a fundamental problem: complexity breeds insecurity. Top-tier distributions often come packed with hundreds of unused software packages right out of the box, which inevitably brings along security vulnerabilities and administrative headaches.</p>
+    <p>In response, the industry is shifting toward minimalism. Distributions like <strong>CoreOS</strong> (which prefers running all software in isolated containers) and <strong>Alpine Linux</strong> (a radically lightweight distro forming the backbone of many public Docker images) are leading this charge. Expect the footprint of the average Linux server to shrink dramatically over the coming years.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Choosing Your Ecosystem</h3>
+    <p>When you pick a distribution for an enterprise environment, you aren't just picking software features—you're investing in a specific vendor's entire philosophy. Before committing, you should be asking questions like:</p>
+    <ul style="color:#fbd38d;">
+      <li style="margin-bottom: 0.5rem;">Is this distribution still going to exist in five years?</li>
+      <li style="margin-bottom: 0.5rem;">Are they consistently fast with critical security patches?</li>
+      <li style="margin-bottom: 0.5rem;">Does it have an active community and thorough documentation?</li>
+      <li style="margin-bottom: 0.5rem;">If everything breaks, will the vendor actually talk to me? And how much is that phone call going to cost?</li>
+    </ul>
+    <p>Keep in mind that the most viable option isn't always the most corporate one. Take <strong>Debian</strong> (technically "Debian GNU/Linux" if we're being precise). It’s not a company, it doesn’t sell anything, and there's no official enterprise-level support hotline. Yet it remains a powerhouse because of its fiercely committed community and its role as the foundation for massively popular distros like Ubuntu.</p>
+
+    <h3 style="color:#feebc8; margin-top:1.5rem;">Popular General-Purpose Distributions</h3>
+    <p>Here’s a quick cheat sheet on the heavy hitters you’re most likely to encounter in the wild:</p>
+
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; margin-top: 1rem; color: #fbd38d;">
+        <thead>
+          <tr style="border-bottom: 2px solid #ed8936; text-align: left;">
+            <th style="padding: 12px;">Distribution</th>
+            <th style="padding: 12px;">Website</th>
+            <th style="padding: 12px;">The Vibe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>Arch</strong></td>
+            <td style="padding: 12px;"><a href="https://archlinux.org" style="color: #f6ad55; text-decoration: none;">archlinux.org</a></td>
+            <td style="padding: 12px;">For those who fear not the command line</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>CentOS</strong></td>
+            <td style="padding: 12px;"><a href="https://centos.org" style="color: #f6ad55; text-decoration: none;">centos.org</a></td>
+            <td style="padding: 12px;">Free analog of Red Hat Enterprise</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>CoreOS</strong></td>
+            <td style="padding: 12px;"><a href="https://coreos.com" style="color: #f6ad55; text-decoration: none;">coreos.com</a></td>
+            <td style="padding: 12px;">Containers, containers everywhere</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>Debian</strong></td>
+            <td style="padding: 12px;"><a href="https://debian.org" style="color: #f6ad55; text-decoration: none;">debian.org</a></td>
+            <td style="padding: 12px;">Free as in freedom, most GNUish distro</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>Fedora</strong></td>
+            <td style="padding: 12px;"><a href="https://fedoraproject.org" style="color: #f6ad55; text-decoration: none;">fedoraproject.org</a></td>
+            <td style="padding: 12px;">Test bed for Red Hat Linux</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>Kali</strong></td>
+            <td style="padding: 12px;"><a href="https://kali.org" style="color: #f6ad55; text-decoration: none;">kali.org</a></td>
+            <td style="padding: 12px;">For penetration testers</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>Linux Mint</strong></td>
+            <td style="padding: 12px;"><a href="https://linuxmint.com" style="color: #f6ad55; text-decoration: none;">linuxmint.com</a></td>
+            <td style="padding: 12px;">Ubuntu-based, extremely desktop-friendly</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>openSUSE</strong></td>
+            <td style="padding: 12px;"><a href="https://opensuse.org" style="color: #f6ad55; text-decoration: none;">opensuse.org</a></td>
+            <td style="padding: 12px;">Free analog of SUSE Linux Enterprise</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>openWRT</strong></td>
+            <td style="padding: 12px;"><a href="https://openwrt.org" style="color: #f6ad55; text-decoration: none;">openwrt.org</a></td>
+            <td style="padding: 12px;">Linux for routers and embedded devices</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>Oracle Linux</strong></td>
+            <td style="padding: 12px;"><a href="https://oracle.com" style="color: #f6ad55; text-decoration: none;">oracle.com</a></td>
+            <td style="padding: 12px;">Oracle-supported version of RHEL</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>RancherOS</strong></td>
+            <td style="padding: 12px;"><a href="https://rancher.com" style="color: #f6ad55; text-decoration: none;">rancher.com</a></td>
+            <td style="padding: 12px;">20MiB, literally everything runs in containers</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>Red Hat Enterprise</strong></td>
+            <td style="padding: 12px;"><a href="https://redhat.com" style="color: #f6ad55; text-decoration: none;">redhat.com</a></td>
+            <td style="padding: 12px;">Reliable, slow-changing, commercial standard</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>Slackware</strong></td>
+            <td style="padding: 12px;"><a href="https://slackware.com" style="color: #f6ad55; text-decoration: none;">slackware.com</a></td>
+            <td style="padding: 12px;">Grizzled, long-surviving distro for traditionalists</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <td style="padding: 12px;"><strong>SUSE Linux Enterprise</strong></td>
+            <td style="padding: 12px;"><a href="https://suse.com" style="color: #f6ad55; text-decoration: none;">suse.com</a></td>
+            <td style="padding: 12px;">Strong in Europe, multilingual enterprise standard</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px;"><strong>Ubuntu</strong></td>
+            <td style="padding: 12px;"><a href="https://ubuntu.com" style="color: #f6ad55; text-decoration: none;">ubuntu.com</a></td>
+            <td style="padding: 12px;">Cleaned-up, massive-scale version of Debian</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 </body>
